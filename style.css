@@ -16,22 +16,24 @@
   margin: 1%;
 }
 
+#trybewarts-header-title {
+  align-self: center;
+}
+
 .trybewarts-login {
   display: flex;
   align-items: center;
   margin-right: 1%;
 }
 
-main{
+main {
   display: flex;
-  
 }
 
-#evaluation-form{
+#evaluation-form {
   flex-direction: column;
 }
 
-form{
+form {
   width: 675px;
 }
-
