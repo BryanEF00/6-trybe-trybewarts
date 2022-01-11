@@ -9,3 +9,16 @@
   background-color: rgb(50, 167, 145);
   height: 50px;
 }
+
+main{
+  display: flex;
+  
+}
+
+#evaluation-form{
+  flex-direction: column;
+}
+
+form{
+  width: 675px;
+}
