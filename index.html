@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>[PROJETO] Trybewart</title>
   </head>
@@ -30,10 +36,40 @@
     <main>
       <form action="" method="get" id="evaluation-form">
         <input type="text" placeholder="" name="texto" />
-        <button type="submit" id="submit-btn">Enviar</button>
+
+        <hr />
+
+        <section id="label-rate-container">
+          <label for="rate" id="label-rate"
+            >Como você avalia a Trybewarts?
+          </label>
+          <input type="radio" name="rate" id="radio1" value="1" />1
+          <input type="radio" name="rate" id="radio2" value="2" />2
+          <input type="radio" name="rate" id="radio3" value="3" />3
+          <input type="radio" name="rate" id="radio4" value="4" />4
+          <input type="radio" name="rate" id="radio5" value="5" />5
+          <input type="radio" name="rate" id="radio6" value="6" />6
+          <input type="radio" name="rate" id="radio7" value="7" />7
+          <input type="radio" name="rate" id="radio8" value="8" />8
+          <input type="radio" name="rate" id="radio9" value="9" />9
+          <input type="radio" name="rate" id="radio10" value="10" />10
+        </section>
+        <label for="textarea" class="textarea">Deixe seu comentário:</label>
+        <textarea
+          name="textarea"
+          id="textarea"
+          cols="30"
+          rows="5"
+          maxlength="500"
+        ></textarea>
+        <label for="label-infos" id="label-infos">
+          Você concorda com o uso das informações acima?
+          <input type="checkbox" name="agreement" id="agreement" />
+        </label>
+        <button type="submit" id="submit-btn" disabled>Enviar</button>
       </form>
     </main>
-    <footer></footer>
+    <footer>Direitos reservados à Trybewarts©</footer>
     <script src="script.js"></script>
   </body>
 </html>

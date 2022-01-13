@@ -10,3 +10,16 @@ function loginValidation() {
 }
 
 loginBtn.addEventListener('click', loginValidation);
+
+/* Referência: https://stackoverflow.com/questions/18110865/how-to-disable-enable-a-button-with-a-checkbox-if-checked */
+
+const agreementCheckBox = document.getElementById('agreement');
+const submitBtn = document.getElementById('submit-btn');
+
+agreementCheckBox.addEventListener('change', () => {
+  if (agreementCheckBox.checked) {
+    submitBtn.disabled = false;
+  } else {
+    submitBtn.disabled = true;
+  }
+});
