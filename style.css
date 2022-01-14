@@ -86,20 +86,18 @@ main {
   opacity: 1;
 }
 
-#trybewarts-forms-logo{
+#trybewarts-forms-logo {
   height: 500px;
   float: right;
   margin-top: -700px;
 }
 
-.nome{
+.nome {
   display: inline-block;
   height: 50px;
 }
 
-
 footer {
-  position: absolute;
   position: fixed;
   width: 100%;
   bottom: 0;
@@ -107,4 +105,3 @@ footer {
   text-align: center;
   color: white;
 }
-
