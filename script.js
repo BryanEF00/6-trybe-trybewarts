@@ -28,5 +28,39 @@ const textArea = document.querySelector('#textarea');
 const counter = document.querySelector('#counter');
 
 textArea.addEventListener('keyup', () => {
-  counter.innerHTML = (500 - textArea.value.length);
+  counter.innerHTML = 500 - textArea.value.length;
+});
+
+const nome = document.querySelector('#input-name');
+const sobrenome = document.querySelector('#input-lastname');
+const inputEmail = document.querySelector('#input-email');
+const casa = document.querySelector('#house');
+const materias = () => {
+  const subject = document.querySelectorAll('input[class="subject"]:checked');
+  const subjectList = [];
+
+  for (let index = 0; index < subject.length; index += 1) {
+    subjectList.push(subject[index].value);
+  }
+  return subjectList.join(', ');
+};
+/* const avaliação = document.querySelector('#input-name');
+const observações = document.querySelector('#input-name');
+ */
+const form = document.querySelector('#evaluation-form');
+
+submitBtn.addEventListener('click', (event) => {
+  event.preventDefault();
+
+  form.innerHTML = `<p>Nome: ${nome.value} ${sobrenome.value}</p>
+  <p>Email: ${inputEmail.value}</p>
+  <p>Casa: ${casa.value}</p>
+  <p>Família: ${
+  document.querySelector('input[name="family"]:checked').value
+}</p>
+  <p>Matérias: ${materias()}</p>
+  <p>Avaliação: ${
+  document.querySelector('input[name="rate"]:checked').value
+}</p>
+  <p>Observações: ${textArea.value}</p>`;
 });
